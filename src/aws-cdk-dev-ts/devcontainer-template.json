@@ -1,0 +1,18 @@
+{
+    "id": "aws-cdk-dev-ts",
+    "version": "1.0.0",
+    "name": "AWS CDK Development - TypeScript",
+    "description": "Tools for CDK development in a GitHub repo",
+    "documentationURL": "https://github.com/MikeJansen/devc-templates/tree/main/src/aws-cdk-dev-ts",
+    "licenseURL": "https://github.com/MikeJansen/devc-templates/blob/main/LICENSE",
+    "options": {
+        "title": {
+            "type": "string",
+            "description": "Dev Container title",
+            "default": "aws-cdk-dev-ts"
+        }
+    },
+    "platforms": [
+        "Any"
+    ]
+}

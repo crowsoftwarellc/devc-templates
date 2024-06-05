@@ -1,0 +1,51 @@
+{
+	"name": "${templateOption:title}",
+	"dockerFile": "Dockerfile",
+	"postCreateCommand": "${localWorkspaceFolder}/.devcontainer/post-create.sh",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/eitsupi/devcontainer-features/jq-likes:2": {
+			"jqVersion": "latest",
+			"yqVersion": "latest",
+			"gojqVersion": "none",
+			"xqVersion": "none",
+			"jaqVersion": "none"
+		},
+		"ghcr.io/lukewiwa/features/shellcheck:0": {
+			"version": "stable"
+		},
+		"ghcr.io/joshuanianji/devcontainer-features/aws-cli-persistence:1": {},
+		"ghcr.io/joshuanianji/devcontainer-features/github-cli-persistence:1": {},
+		"ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
+			"version": "latest",
+			"helm": "latest",
+			"minikube": "none"
+		},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts",
+			"nvmVersion": "latest"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.vscode-yaml",
+				"ms-azuretools.vscode-docker",
+				"zaaack.markdown-editor",
+				"vivaxy.vscode-conventional-commits",
+				"eamodio.gitlens",
+				"usernamehw.errorlens",
+				"github.vscode-github-actions"
+			]
+		}
+	},
+	"containerEnv": {
+		"WORKSPACE": "${localWorkspaceFolder}"
+	}
+}
