@@ -1,6 +1,6 @@
 {
     "id": "aws-cdk-dev-ts",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "AWS CDK Development - TypeScript",
     "description": "Tools for CDK development in a GitHub repo",
     "documentationURL": "https://github.com/MikeJansen/devc-templates/tree/main/src/aws-cdk-dev-ts",
