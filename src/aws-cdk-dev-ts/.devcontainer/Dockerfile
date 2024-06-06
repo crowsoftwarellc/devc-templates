@@ -21,15 +21,15 @@ tar -xzf eksctl_"$platform".tar.gz -C /tmp && rm eksctl_"$platform".tar.gz
 mv /tmp/eksctl /usr/local/bin
 EOF
 
-# xdg-open
-RUN <<EOF
-set -e
-cat << 'EOF2' > /usr/local/bin/xdg-open
-#!/usr/bin/env bash
-"${BROWSER}" "${@}"
-EOF2
-chmod +x /usr/local/bin/xdg-open
-EOF
+# # xdg-open
+# RUN <<EOF
+# set -e
+# cat << 'EOF2' > /usr/local/bin/xdg-open
+# #!/usr/bin/env bash
+# "${BROWSER}" "${@}"
+# EOF2
+# chmod +x /usr/local/bin/xdg-open
+# EOF
 
 # Install AWS SSM Plugin
 RUN <<EOF
